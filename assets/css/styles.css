@@ -47,7 +47,6 @@
   --footer-background-color: #000;
 }
 
-
 .dark-theme button,
 .dark-theme h1,
 .dark-theme h2,
@@ -60,13 +59,11 @@
   transform: rotateZ(180deg) scaleX(-1);
 }
 
-
 * {
   margin: 0;
   box-sizing: border-box;
   transition: 1s;
 }
-
 
 /*generic styles*/
 h1,
@@ -173,15 +170,13 @@ header::before {
   color: var(--primary-color-contrast);
 }
 
-
-
 main::before {
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   position: absolute;
   background: var(--page-background) no-repeat,
-    url("../images/backgrounds/florest.png") no-repeat;
+    url('../images/backgrounds/florest.png') no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -201,7 +196,7 @@ main::before {
 
   /*usamos o mask e não background, porque isso vai deixar trocar a cor da imgem   */
 
-  mask: var(--character-top-image-src) bottom / 100% no-repeat;
+  mask: url('../images/characters/kids-on-the-bike.svg') bottom / 100% no-repeat;
 
   /*webkit é um vendor prefixe. usamos prefixes para habilitar alguma função do css que alguns navergadores ainda não tem suporte */
   -webkit-mask: var(--character-top-image-src) bottom / contain no-repeat;
@@ -230,56 +225,55 @@ main {
 }
 
 /*section styles*/
-section{
+section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 95px;
 }
 
-
 /*section 01 - inverted world*/
-.container{
+.container {
   max-width: 1200px;
 }
 
-#section-inverted-world{
+#section-inverted-world {
   align-items: center;
 }
 
-#section-inverted-world .section-texts{
+#section-inverted-world .section-texts {
   width: 50%;
 }
 
-#section-inverted-world .section-texts h2{
+#section-inverted-world .section-texts h2 {
   max-width: 300px;
 }
 
 /*section 02 - Stranger Things trailler */
 
-#section-stranger-things-trailer .section-texts{
+#section-stranger-things-trailer .section-texts {
   width: 50%;
   text-align: right;
 }
 
-#section-stranger-things-trailer .section-texts h2{
+#section-stranger-things-trailer .section-texts h2 {
   max-width: 425px;
-  display:inline-block;
+  display: inline-block;
 }
 
-#section-stranger-things-trailer  .video-frame{
+#section-stranger-things-trailer .video-frame {
   background-color: var(--primary-color);
 }
 
 #section-stranger-things-trailer .video-frame iframe {
   position: relative;
-  bottom:24px;
+  bottom: 24px;
   left: 24px;
   border: 2px solid;
   border-image: linear-gradient(
     var(--primary-color),
     var(--primary-color-contrast)
   );
-  border-image-slice:10;
+  border-image-slice: 10;
 }
 
 /*section 03 gallery*/
@@ -360,7 +354,7 @@ section{
 }
 
 #section-form .form-container::after {
-  content: "";
+  content: '';
   background-color: var(--highlight-color);
   width: 100%;
   height: 100%;
@@ -413,10 +407,10 @@ footer p {
 
 footer::before,
 footer::after {
-  content: "";
+  content: '';
   width: 300px;
   height: 200px;
-  background: url("../images/footer/tape.svg") no-repeat;
+  background: url('../images/footer/tape.svg') no-repeat;
   background-size: contain;
   position: absolute;
   bottom: -30px;
