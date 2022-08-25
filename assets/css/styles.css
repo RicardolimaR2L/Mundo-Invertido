@@ -173,14 +173,6 @@ header::before {
   color: var(--primary-color-contrast);
 }
 
-/*main styles*/
-main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
 
 
 main::before {
