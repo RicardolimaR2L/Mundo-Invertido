@@ -41,12 +41,9 @@
       <div id="bottom-characters" .world-characters></div>
       <section id="section-inverted-world" class="container">
         <div class="section-texts">
-          <h1>o mundo invertido</h1>
+          <h2>o mundo invertido</h2>
           <p>
-            O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas
-            horrendas, tempestades assustadoras, muita escuridão e entidades
-            malignas. Um reino controlado por Vecna, que tem planos de trazer
-            tudo isso ao nosso mundo.
+            O Mundo Invertido parece uma cópia do nosso mundo, mas com criaturas horrendas, tempestades assustadoras, muita escuridão e entidades malignas. Um reino controlado por Vecna, que tem planos de trazertudo isso ao nosso mundo.
           </p>
         </div>
         <img
@@ -118,32 +115,29 @@
           não tem medo de rodar o D20, chegou a hora de se inscrever para fazer
           parte da nova campanha.
         </p>
-
         <div class="form-content">
-          <h3>
-            entre para o clube de D&D e tenha experiencias de
-            <span>outro mundo</span>
-          </h3>
-          <form>
-            <label for="txtname">nome completo</label>
-            <input type="text" name="name" id="txtname" />
+          <h3>Entre para o clube de D&D e tenha experiências de <span>outro mundo<span></span></h3>
 
-            <label for="txtemail">E-mail</label>
-            <input type="text" name="email" id="txtemail" />
-
-            <label for="txtlevel">level</label>
-            <input type="text" name="level" id="txtlevel" />
-
-            <label for="txtcharacter">personagem</label>
-            <textarea
-              name="name"
-              cols="30"
-              rows="10"
-              id="txtcharacter"
-            ></textarea>
-            <button type="button" id="btnsubscribe">Me inscrever</button>
-          </form>
+          <div class="form-container">
+            <form>
+              <label for="name">Nome Completo</label>
+              <input type="text" name="name" id="txtName">
+          
+              <label for="email">E-mail</label>
+              <input type="email" name="email" id="txtEmail">
+          
+              <label for="level">Level</label>
+              <input type="text" name="level" id="txtLevel">
+          
+              <label for="character">Personagem</label>
+              <textarea name="character" cols="30" rows="10" id="txtCharacter"></textarea>
+            
+              <button type="button" id="btnSubscribe">Me inscrever</button>
+            </form>
+            <script type="module" src="assets/js/main.js"></script>
+          </div>
         </div>
+        
       </section>
     </main>
     <footer>
@@ -153,5 +147,14 @@
       </p>
       <img src="assets/images/footer/logo.svg" alt="logotipo Dio" />
     </footer>
+    <!----
+    <script type="module" src="assets/"></script>
+    <script> 
+     function switch-theme(){
+      document.body.classlist.toggle('dark-theme')
+      document.body.classlist.toggle('light-theme')
+     }
+
+    </script>-->
   </body>
 </html>
