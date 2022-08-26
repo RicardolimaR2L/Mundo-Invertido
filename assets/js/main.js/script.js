@@ -12,9 +12,11 @@ function switchTheme() {
 
   document.body.setAttribute('aria-label', 'Trocando o tema');
 
+  //aqui está verificando qual tema está em uso e selecionando a musica para cada um  
   const theme = document.body.classList[0];
   const music = theme === 'light-theme' ? 'normal-world.mpeg' : 'inverted-world.mpeg'
 
+  
   const audio = document.getElementById('music');
   audio.src = `assets/musics/${music}`;
   audio.play();
