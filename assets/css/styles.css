@@ -196,7 +196,8 @@ main::before {
 
   /*usamos o mask e não background, porque isso vai deixar trocar a cor da imgem   */
 
-  mask: url('../images/characters/kids-on-the-bike.svg') bottom / 100% no-repeat;
+  mask: url('../images/characters/inverted-world-monster.svg') bottom / 100%
+    no-repeat;
 
   /*webkit é um vendor prefixe. usamos prefixes para habilitar alguma função do css que alguns navergadores ainda não tem suporte */
   -webkit-mask: var(--character-top-image-src) bottom / contain no-repeat;
