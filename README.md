@@ -1,5 +1,6 @@
 # Mundo-Invertido
- ## Projeto da semana front-end da Dio.<br>
+Projeto para colocar em prática o que foi aprendiodo na semana front-end da Dio.<br>
+
  # tecnologias usadas<br> 
 - Html
 - Css
